@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        body{
+            display: inline-table;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a{
+       
+            color: brown;
+            font-weight: bolder;
+            text-decoration: none;
+           
+        }
+        a:visited{
+            color: rgb(255, 0, 43);
+            font-weight:bolder ; 
+          
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+
+        }
+   
+        a:active{
+            color: green;
+        }
+     .especial{
+        background-color: aqua; color: darkred;
+     }
+       .especial::after{
+            font-weight: normal;
+            text-decoration: none;
+            content: "⇐";
+            color: black;
+        }
+        .especial::before{
+            font-weight: normal;
+            text-decoration: none;
+            content: "⇒";
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personalizando links</h1>
+    <ul>
+      <li><a href="https://github.com/leotruvs" target="_blank" rel="external">repositório github</a></li><br>
+      <li><a href="https://www.youtube.com/channel/UCmjmDnbYCvunk6KtKhBalhw" target="_blank" rel="external"> 
+        Canal do youtube</a></li> <br>
+      <li><a href="https://ge.globo.com/futebol/times/atletico-mg/" target="_blank" rel="external" class="especial">Pagina do galo no globoesporte.com</a></li>
+    </ul>
+
+</body>
+</html>
